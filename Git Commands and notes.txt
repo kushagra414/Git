@@ -1,0 +1,26 @@
+------------------------------------------------------------------------------------- Git ---------------------------------------------------------------------------------------------------
+
+What is Git ?
+Git is a distributed Version control system. ---> This means that all the codebase including the history of the database is mirrored on the users computer.
+
+Why we use git?
+Git is very useful for backing your data as well as to track history. It helps when many people are working on same project.
+
+--------------------------------------------------------------------------------- Git commands ----------------------------------------------------------------------------------------------
+
+-> git init <folder name/ project name>   ----> This will create a new git repository.
+
+Git has the States--->
+1. Working directory
+2. Staging Area
+3. Repository
+
+
+-> Working Directory :- This is the directory where all the file and folder exists. These files or folder may or may not be managed by Git, But git is aware of these files and folders.
+-> Repository(.git folder) :- In this area all the commits and history are saved.
+-> Staging Area :- In between the working directory and the repository is the staging area where the working directory is prepared to be moved from the working area to repository.
+All these states are local drive. But you can share or save the on a remote server. eg:- Github\
+
+-> git status   -----> Used to check status of your file.
+-> git add <file name> OR use -> git add -A (To add all files to staging area)  -----> To add filename to staging area
+-> git commit -m "This is commit message"   -----> To commit changes i.e. To add the files from staging area to the Repository

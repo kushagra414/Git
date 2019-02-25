@@ -28,5 +28,7 @@ All these states are local drive. But you can share or save the on a remote serv
 -> git log    -----> This command show all the commits that are parts of the repo
 -> git show    -----> This is similar to git log command..
 -> git ls-files   ------> Ths shows files that are tracked by git.
+-> git commit -a    ------> This tells git to add modified files to staging area then commit those files.
+-> git commit -am    -------> Same as above command but with message.
 
 

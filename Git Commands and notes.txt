@@ -30,5 +30,16 @@ All these states are local drive. But you can share or save the on a remote serv
 -> git ls-files   ------> Ths shows files that are tracked by git.
 -> git commit -a    ------> This tells git to add modified files to staging area then commit those files.
 -> git commit -am    -------> Same as above command but with message.
-
-
+-> git reset HEAD <file name>   ------> To unstage a file from git.
+-> git checkout -- <file name>  --------> To restore a file to previous comitted state.
+-> git log --oneline --graph --decorator --all   ----> Use of git log with functionalities.
+-> --oneline     -----> It's for printing all the info of a commit in single line. Shows git history.
+-> --graph       -----> Represent the info by using "*".
+-> --decrator    -----> Tells us which commits are parts of which branches.
+-> --all         -----> Include all commits.
+-> git config --global alias.<alias name> "log --oneline --graph --decorate --all"     ------> This is used to create a alias, which can be used to represent the log command with extra functionality.
+-> --global is used because we want the alias to be at user level not at a repository level.
+-> --alias.<alias name>       -----> Used to create a alias name.
+-> After that you can use -> git hist -- <file name>     ------> Will show the histroy of the file.
+-> git config --global --list    -----> will give list of all the global configration in GIT.
+-> git config --global --edit    -----> To edit the global configration.

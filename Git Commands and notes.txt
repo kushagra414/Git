@@ -24,3 +24,6 @@ All these states are local drive. But you can share or save the on a remote serv
 -> git status   -----> Used to check status of your file.
 -> git add <file name> OR use -> git add -A (To add all files to staging area)  -----> To add filename to staging area
 -> git commit -m "This is commit message"   -----> To commit changes i.e. To add the files from staging area to the Repository
+-> rm -rf .git    -----> To remove version control system, from the current folder.
+
+

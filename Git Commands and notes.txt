@@ -43,3 +43,8 @@ All these states are local drive. But you can share or save the on a remote serv
 -> After that you can use -> git hist -- <file name>     ------> Will show the histroy of the file.
 -> git config --global --list    -----> will give list of all the global configration in GIT.
 -> git config --global --edit    -----> To edit the global configration.
+-> git mv README.md PLEASE_README.md     -----> Renaming a file in git. This will rename the file in working directory and add the actopn to the staging area, To rename files in repo, You have to commit changes. So
+--> Commiting the changes ->git commit -m "Renaming the file".    -----> The advantage of using git to perform these file operation is that they are tracked by git.
+-> git rm <file name>   -----> To delete a file, after this need to commit changes.
+
+

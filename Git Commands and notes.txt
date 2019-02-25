@@ -46,5 +46,7 @@ All these states are local drive. But you can share or save the on a remote serv
 -> git mv README.md PLEASE_README.md     -----> Renaming a file in git. This will rename the file in working directory and add the actopn to the staging area, To rename files in repo, You have to commit changes. So
 --> Commiting the changes ->git commit -m "Renaming the file".    -----> The advantage of using git to perform these file operation is that they are tracked by git.
 -> git rm <file name>   -----> To delete a file, after this need to commit changes.
-
-
+-> git add -u   ------> To update deleted files and add them to staging area
+-> git add -A   ------> Covers all types of updates on git directory and add them to staging area
+-> To exculde a file/folder from git, make a file named .gitignore and open it with txt editor, Then add the file name that you want git to ignore in the .gitignore file. for eg: see the Git folder in P: drive.
+--> To ignore an extention like .log extention use -----> *.log

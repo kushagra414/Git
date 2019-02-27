@@ -10,7 +10,7 @@ Git is very useful for backing your data as well as to track history. It helps w
 
 -> git init <folder name/ project name>   ----> This will create a new git repository.
 
-Git has the States--->
+Git has three States--->
 1. Working directory
 2. Staging Area
 3. Repository
@@ -32,10 +32,10 @@ All these states are local drive. But you can share or save the on a remote serv
 -> git commit -am    -------> Same as above command but with message.
 -> git reset HEAD <file name>   ------> To unstage a file from git.
 -> git checkout -- <file name>  --------> To restore a file to previous comitted state.
--> git log --oneline --graph --decorator --all   ----> Use of git log with functionalities.
+-> git log --oneline --graph --decorate --all   ----> Use of git log with functionalities.
 -> --oneline     -----> It's for printing all the info of a commit in single line. Shows git history.
 -> --graph       -----> Represent the info by using "*".
--> --decrator    -----> Tells us which commits are parts of which branches.
+-> --decorate    -----> Tells us which commits are parts of which branches.
 -> --all         -----> Include all commits.
 -> git config --global alias.<alias name> "log --oneline --graph --decorate --all"     ------> This is used to create a alias, which can be used to represent the log command with extra functionality.
 -> --global is used because we want the alias to be at user level not at a repository level.
@@ -50,3 +50,33 @@ All these states are local drive. But you can share or save the on a remote serv
 -> git add -A   ------> Covers all types of updates on git directory and add them to staging area
 -> To exculde a file/folder from git, make a file named .gitignore and open it with txt editor, Then add the file name that you want git to ignore in the .gitignore file. for eg: see the Git folder in P: drive.
 --> To ignore an extention like .log extention use -----> *.log
+-> git diff <address of first commit> <address of second commit>   ------> This tells the difference between the two commits.
+-> git difftool <address of first commit> <address of second commit>
+
+-> Branching is just a timeline of commits. Branches are the names we give to timelines in Git
+-> After a timeline is complete the branches can be merged with the master branch.
+Types of merges    ----->
+1. Fast-Forward
+-> Fast-Forward is simplest case of Branching
+-> Git will simply apply all changes to feature branch to master branch and it will appear though the branching never existed.
+-> We can disable this type of branch.
+
+2. Automatic
+-> Non conflicting Merge in Parent branch. Git autimatically detects any conflicts and resolves them
+-> Preserves both timelines
+-> Merge commit on Destination
+
+3. Manual merge
+-> Automatic Merge not possible
+-> Conflicting Merge States
+-> Changes saved in Merge commit
+
+Special Markers
+Just like "Pointers"
+-> HEAD
+--> Points to last commit of current branch
+--> Can be moved manually
+
+
+-> git branch    ------> Tells us current branch that we are on.
+-> git checkout -b <name of branch>     ------> This creates a branch and switches to that branch

@@ -80,3 +80,7 @@ Just like "Pointers"
 
 -> git branch    ------> Tells us current branch that we are on.
 -> git checkout -b <name of branch>     ------> This creates a branch and switches to that branch
+-> To merge the branches we need to first swith to master branch using -> git checkout <branch name>
+-> git merge <name of the branch that you want to merge>   ------> Merges the master branch with feature branch.
+-> git branch -d <name of branch>    ------> This deletes the feature branch.
+Conflicts will occur when same part of the file is changed on different branches, It will fail to merge aitomatically

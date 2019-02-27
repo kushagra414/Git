@@ -84,3 +84,13 @@ Just like "Pointers"
 -> git merge <name of the branch that you want to merge>   ------> Merges the master branch with feature branch.
 -> git branch -d <name of branch>    ------> This deletes the feature branch.
 Conflicts will occur when same part of the file is changed on different branches, It will fail to merge aitomatically
+
+Tagging Events
+git tag -a <name of tag> -m "Release 1.0"    -----> -a is for annotated tag. These tag contain extra info compared to simple tags
+git tag -d <Tag name>     -----> To delete a tag.
+
+Save work in Progress with stashing
+Stashing is used put the current work in stash, This will remove the files from being tracked while they are in stash. They can be removed from stash wehn needed.
+-> git stash  -----> Puts all current files in a stash
+-> git stash list   -----> Shows the files and commits in stash
+-> git stash pop  -----> It performs two action 1. It applies whatever was in the stash to files. 2. It drops the stash that was applied

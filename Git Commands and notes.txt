@@ -94,3 +94,9 @@ Stashing is used put the current work in stash, This will remove the files from 
 -> git stash  -----> Puts all current files in a stash
 -> git stash list   -----> Shows the files and commits in stash
 -> git stash pop  -----> It performs two action 1. It applies whatever was in the stash to files. 2. It drops the stash that was applied
+
+Time Travel
+-> git reset <commit id> --soft     -----> --soft is leat destructive rollback as it just changes the HEAD pointer to the given id.
+-> git reset <commit id> --mixed    ------> --mixed unstages the changes that had occured.
+git reset <commit id> --hard        ------> --hard is the most destructive, It wipes all the commits before the given commit.
+-> git commit --amend   ----> This is used to change the commit message, Where HEAD is pointing.

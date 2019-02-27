@@ -99,4 +99,5 @@ Time Travel
 -> git reset <commit id> --soft     -----> --soft is leat destructive rollback as it just changes the HEAD pointer to the given id.
 -> git reset <commit id> --mixed    ------> --mixed unstages the changes that had occured.
 git reset <commit id> --hard        ------> --hard is the most destructive, It wipes all the commits before the given commit.
+git reflog    -----> This is very usefull it will give us all the commit id even after hard resetting the commit, Using reflog we can jump to any commit we want.
 -> git commit --amend   ----> This is used to change the commit message, Where HEAD is pointing.

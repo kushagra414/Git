@@ -1,4 +1,8 @@
 ------------------------------------------------------------------------------------- Git ---------------------------------------------------------------------------------------------------
+NOTE:-Arrow represent a point double arrow represent sub-points in the point eg:-
+->  Represents a point
+--> Represents a point under point.
+
 
 What is Git ?
 Git is a distributed Version control system. ---> This means that all the codebase including the history of the database is mirrored on the users computer.
@@ -19,14 +23,14 @@ Git has three States--->
 -> Working Directory :- This is the directory where all the file and folder exists. These files or folder may or may not be managed by Git, But git is aware of these files and folders.
 -> Repository(.git folder) :- In this area all the commits and history are saved.
 -> Staging Area :- In between the working directory and the repository is the staging area where the working directory is prepared to be moved from the working area to repository.
-All these states are local drive. But you can share or save the on a remote server. eg:- Github\
+All these states are saved on local drive. But you can share or save the on a remote server. eg:- Github\
 
 -> git status   -----> Used to check status of your file.
 -> git add <file name> OR use -> git add -A (To add all files to staging area)  -----> To add filename to staging area.
 -> git commit -m "This is commit message"   -----> To commit changes i.e. To add the files from staging area to the Repository.
--> rm -rf .git    -----> To remove version control system, from the current folder.
+-> rm -rf .git    -----> To remove version control system, from the current folder. This is not a git command for git git command use git rm -rf
 -> git log    -----> This command show all the commits that are parts of the repo
--> git show    -----> This is similar to git log command..
+-> git show    -----> This is similar to git log command. It shows where the HEAD is.
 -> git ls-files   ------> Ths shows files that are tracked by git.
 -> git commit -a    ------> This tells git to add modified files to staging area then commit those files.
 -> git commit -am    -------> Same as above command but with message.
@@ -48,7 +52,7 @@ All these states are local drive. But you can share or save the on a remote serv
 -> git rm <file name>   -----> To delete a file, after this need to commit changes.
 -> git add -u   ------> To update deleted files and add them to staging area
 -> git add -A   ------> Covers all types of updates on git directory and add them to staging area
--> To exculde a file/folder from git, make a file named .gitignore and open it with txt editor, Then add the file name that you want git to ignore in the .gitignore file. for eg: see the Git folder in P: drive.
+-> To exclude a file/folder from git, make a file named .gitignore and open it with txt editor, Then add the file name that you want git to ignore in the .gitignore file. for eg: see the Git folder in P: drive.
 --> To ignore an extention like .log extention use -----> *.log
 -> git diff <address of first commit> <address of second commit>   ------> This tells the difference between the two commits.
 -> git difftool <address of first commit> <address of second commit>
@@ -57,7 +61,7 @@ All these states are local drive. But you can share or save the on a remote serv
 -> After a timeline is complete the branches can be merged with the master branch.
 Types of merges    ----->
 1. Fast-Forward
--> Fast-Forward is simplest case of Branching
+-> Fast-Forward is simplest case of merging
 -> Git will simply apply all changes to feature branch to master branch and it will appear though the branching never existed.
 -> We can disable this type of branch.
 
@@ -80,6 +84,7 @@ Just like "Pointers"
 
 -> git branch    ------> Tells us current branch that we are on.
 -> git checkout -b <name of branch>     ------> This creates a branch and switches to that branch
+--> checkout -----> Used to change branch ---> -b used to create a branch
 -> To merge the branches we need to first swith to master branch using -> git checkout <branch name>
 -> git merge <name of the branch that you want to merge>   ------> Merges the master branch with feature branch.
 -> git branch -d <name of branch>    ------> This deletes the feature branch.
@@ -90,7 +95,7 @@ git tag -a <name of tag> -m "Release 1.0"    -----> -a is for annotated tag. The
 git tag -d <Tag name>     -----> To delete a tag.
 
 Save work in Progress with stashing
-Stashing is used put the current work in stash, This will remove the files from being tracked while they are in stash. They can be removed from stash wehn needed.
+Stashing is used put the current work in stash, This will remove the files from being tracked while they are in stash. They can be removed from stash when needed.
 -> git stash  -----> Puts all current files in a stash
 -> git stash list   -----> Shows the files and commits in stash
 -> git stash pop  -----> It performs two action 1. It applies whatever was in the stash to files. 2. It drops the stash that was applied
@@ -101,3 +106,36 @@ Time Travel
 git reset <commit id> --hard        ------> --hard is the most destructive, It wipes all the commits before the given commit.
 git reflog    -----> This is very usefull it will give us all the commit id even after hard resetting the commit, Using reflog we can jump to any commit we want.
 -> git commit --amend   ----> This is used to change the commit message, Where HEAD is pointing.
+-> git remote add origin https://github.com/kushagra414/demo.git
+git push -u origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

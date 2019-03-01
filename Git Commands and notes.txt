@@ -106,8 +106,9 @@ Time Travel
 git reset <commit id> --hard        ------> --hard is the most destructive, It wipes all the commits before the given commit.
 git reflog    -----> This is very usefull it will give us all the commit id even after hard resetting the commit, Using reflog we can jump to any commit we want.
 -> git commit --amend   ----> This is used to change the commit message, Where HEAD is pointing.
--> git remote add origin https://github.com/kushagra414/demo.git
-git push -u origin master
+-> git remote add origin https://github.com/kushagra414/demo.git    -----> add ---> takes two parameters 1. name of remote refrence 2. full url of repository
+-> git push -u <refrence name of remote repo> <nmae of local repo> --tags     ----->  -u sets up a tracking branch relationship between master branch on local repo and master branch on remote repo. origin is refrence name of remote repo.  --tags to send all the tags in local repo
+-> git remote -v      -----> Tells if we are connected to a remote server
 
 
 

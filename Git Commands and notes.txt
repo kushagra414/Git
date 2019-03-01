@@ -113,7 +113,7 @@ git reflog    -----> This is very usefull it will give us all the commit id even
 
 
 -> git remote add origin https://github.com/kushagra414/demo.git    -----> add ---> takes two parameters 1. name of remote refrence 2. full url of repository
--> git push -u <refrence name of remote repo> <nmae of local repo> --tags     ----->  -u sets up a tracking branch relationship between master branch on local repo and master branch on remote repo. origin is refrence name of remote repo.  --tags to send all the tags in local repo
+-> git push -u <refrence name of remote repo> <name of local branch> --tags     ----->  -u sets up a tracking branch relationship between master branch on local repo and master branch on remote repo. origin is refrence name of remote repo.  --tags to send all the tags in local repo
 -> git remote -v      -----> Tells if we are connected to a remote server
   GIT REMOTE COMMANDS
  git remote [-v | --verbose]

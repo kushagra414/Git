@@ -23,7 +23,7 @@ Git has three States--->
 -> Working Directory :- This is the directory where all the file and folder exists. These files or folder may or may not be managed by Git, But git is aware of these files and folders.
 -> Repository(.git folder) :- In this area all the commits and history are saved.
 -> Staging Area :- In between the working directory and the repository is the staging area where the working directory is prepared to be moved from the working area to repository.
-All these states are saved on local drive. But you can share or save the on a remote server. eg:- Github\
+All these states are saved on local drive. But you can share or save the on a remote server. eg:- Github
 
 -> git status   -----> Used to check status of your file.
 -> git add <file name> OR use -> git add -A (To add all files to staging area)  -----> To add filename to staging area.
@@ -47,11 +47,11 @@ All these states are saved on local drive. But you can share or save the on a re
 -> After that you can use -> git hist -- <file name>     ------> Will show the histroy of the file.
 -> git config --global --list    -----> will give list of all the global configration in GIT.
 -> git config --global --edit    -----> To edit the global configration.
--> git mv README.md PLEASE_README.md     -----> Renaming a file in git. This will rename the file in working directory and add the actopn to the staging area, To rename files in repo, You have to commit changes. So
+-> git mv README.md PLEASE_README.md     -----> Renaming a file in git. This will rename the file in working directory and add the action to the staging area, To rename files in repo, You have to commit changes. So
 --> Commiting the changes ->git commit -m "Renaming the file".    -----> The advantage of using git to perform these file operation is that they are tracked by git.
 -> git rm <file name>   -----> To delete a file, after this need to commit changes.
 -> git add -u   ------> To update deleted files and add them to staging area
--> git add -A   ------> Covers all types of updates on git directory and add them to staging area
+-> git add -A   ------> Covers all types of updates/modificatio on git directory and add them to staging area
 -> To exclude a file/folder from git, make a file named .gitignore and open it with txt editor, Then add the file name that you want git to ignore in the .gitignore file. for eg: see the Git folder in P: drive.
 --> To ignore an extention like .log extention use -----> *.log
 -> git diff <address of first commit> <address of second commit>   ------> This tells the difference between the two commits.
@@ -66,7 +66,7 @@ Types of merges    ----->
 -> We can disable this type of branch.
 
 2. Automatic
--> Non conflicting Merge in Parent branch. Git autimatically detects any conflicts and resolves them
+-> Non conflicting Merge in Parent branch. Git automatically detects any conflicts and resolves them
 -> Preserves both timelines
 -> Merge commit on Destination
 
@@ -88,7 +88,7 @@ Just like "Pointers"
 -> To merge the branches we need to first swith to master branch using -> git checkout <branch name>
 -> git merge <name of the branch that you want to merge>   ------> Merges the master branch with feature branch.
 -> git branch -d <name of branch>    ------> This deletes the feature branch.
-Conflicts will occur when same part of the file is changed on different branches, It will fail to merge aitomatically
+Conflicts will occur when same part of the file is changed on different branches, It will fail to merge atomatically
 
 Tagging Events
 git tag -a <name of tag> -m "Release 1.0"    -----> -a is for annotated tag. These tag contain extra info compared to simple tags
@@ -112,7 +112,7 @@ git reflog    -----> This is very usefull it will give us all the commit id even
 ------------------------------------------------------------------------------------------ Github -----------------------------------------------------------------------------------------
 
 
--> git remote add origin https://github.com/kushagra414/demo.git    -----> add ---> takes two parameters 1. name of remote refrence 2. full url of repository
+-> git remote add origin https://github.com/kushagra414/demo.git    -----> add ---> takes two parameters:- 1. name of remote refrence 2. full url of repository
 -> git push -u <refrence name of remote repo> <name of local branch> --tags     ----->  -u sets up a tracking branch relationship between master branch on local repo and master branch on remote repo. origin is refrence name of remote repo.  --tags to send all the tags in local repo
 -> git remote -v      -----> Tells if we are connected to a remote server
   GIT REMOTE COMMANDS
@@ -133,6 +133,13 @@ git reflog    -----> This is very usefull it will give us all the commit id even
     -v, --verbose         be verbose; must be placed before a subcommand
 
 
+Using SSH security instead of HTTPS.
+Why ? Because it saves time, should be used only on Personal Computer.
+
+SSH vs HTTPS
+HTTPS asks for username and password everytime hence we will use SSH
+
+-> git clone <cloning url> <name of the folder to clone to. This is optional>
 
 
 

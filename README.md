@@ -1,1 +1,1 @@
-This repository has notes on git.
+This repository has complete notes on git.

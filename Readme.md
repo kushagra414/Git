@@ -24,8 +24,8 @@ All these states are saved on local drive. But you can share or save the on a re
 - git status   -----> Used to check status of your file.
 - git add \<file name> OR use - git add -A (To add all files to staging area)  -----> To add filename to staging area.
 - git commit -m "This is commit message"   -----> To commit changes i.e. To add the files from staging area to the Repository.
-- rm -rf .git    -----> To remove version control system, from the current folder. This is not a git command for git git command use git rm -rf
-- git log    -----> This command show all the commits that are parts of the repo
+- rm -rf .git    -----> To remove version control system, from the current folder. This is not a git command, for git command use git rm -rf
+- git log    -----> This command show all the commits that are parts of the repo.
 - git show    -----> This is similar to git log command. It shows where the HEAD is.
 - git ls-files   -----> Ths shows files that are tracked by git.
 - git commit -a    -----> This tells git to add modified files to staging area then commit those files.

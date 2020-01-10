@@ -1,6 +1,6 @@
 # Git
 __What is Git ?__<br>
-Git is a distributed Version control system. \<br>
+Git is a distributed Version control system. <br>
 This means that all the codebase including the history of the database is mirrored on the users computer.
 
 __Why we use git?<br>__

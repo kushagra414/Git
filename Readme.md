@@ -166,3 +166,12 @@ HTTPS asks for username and password every time hence we will use SSH
 -  Syntax for comparing time changes ---> `<branch name>@{time/date/days}`.
 -  You can also compare ranges by comparing HEAD at different positions ---> `HEAD@{number}`. `HEAD^` ---> This means HEAD-1
 - `git commit -m "message", close #<issue number>"` ---> This will close the issue and also show the commit id associated with the issue on github.
+
+## To update your forked repo with the original github repo follow :-
+
+- Add **Upstream** of original repo to your git.
+  - `git remote add upstream <link of original git repository>`
+- Next is to pull the upstream.
+  - `git pull upstream master`
+- After this you need to push the changes to forked repository.
+  - `git push origin master`

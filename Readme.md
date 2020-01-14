@@ -78,6 +78,7 @@ Just like "Pointers"
   - Can be moved manually
 
 
+**Branches**<br>
 - `git branch`    -----> Tells us current branch that we are on.
 - `git checkout -b <name of branch>`     -----> This creates a branch and switches to that branch
   - `checkout` -----> Used to change branch -----> `-b` used to create a branch
@@ -85,6 +86,7 @@ Just like "Pointers"
 - `git merge <name of the branch that you want to merge>`   -----> Merges the master branch with feature branch.
 - `git branch -d <name of branch>`    -----> This deletes the feature branch.
 - Conflicts will occur when same part of the file is changed on different branches, It will fail to merge aromatically.
+- `git branch -m <old branch name> <new branch name>`   -----> Rename branch name. 
 
 **Tagging Events**<br>
 - `git tag -a <name of tag> -m "Release 1.0"`    -----> `-a` is for annotated tag. These tag contain extra info compared to simple tags
